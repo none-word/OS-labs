@@ -1,0 +1,6 @@
+PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                                                          
+...                                                                                                                                                           
+   3864 grisha 20   0 1231188   1,2g   1016 S   5,0  10,4   0:00.52 ex2                                                                                                                                                           
+...
+
+My process used all RAM and almost all virtual memory.

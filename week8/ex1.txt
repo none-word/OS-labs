@@ -1,0 +1,7 @@
+PS C:\WINDOWS\system32> systeminfo | find "Physical Memory"
+Total Physical Memory:     16,228 MB
+Available Physical Memory: 5,299 MB
+PS C:\WINDOWS\system32> systeminfo | find "Virtual Memory"
+Virtual Memory: Max Size:  32,205 MB
+Virtual Memory: Available: 11,247 MB
+Virtual Memory: In Use:    20,958 MB

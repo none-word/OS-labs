@@ -1,0 +1,1 @@
+Physical address refers to the RAM (address of proper cell in RAM). Virtual address refers to virtual memory (abstraction defined by OS). Process access to memory through the virtual address, bun does not through physical directly.

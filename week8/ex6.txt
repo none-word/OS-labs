@@ -1,0 +1,2 @@
+Page are 8 kb => log2(8*1024) = 13 - offset bit => 16 - 13 = 3 bit for number of page => 2^3 = 8 pages
+Answer: 8 pages in virtual memory.
