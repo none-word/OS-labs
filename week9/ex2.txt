@@ -1,0 +1,1 @@
+My sequence is in the file "ex2_input". My sequence has the greatest hit/miss ratio for 20 pages. Because there is only one miss since the page is one and so there no need to change the page after 1 iteration (At the beginning there is no page in RAM, so it is needed to move the page to RAM).
