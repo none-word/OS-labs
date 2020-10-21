@@ -1,0 +1,49 @@
+$ nano _ex3.txt
+$ chmod o-x _ex3.txt
+$ chmod u-x _ex3.txt
+$ ls -l
+total 1
+-rw-r--r--    1 Grigoriy UsersGrp         0 Oct 21 16:34 _ex3.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       273 Oct 21 15:31 ex1.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       255 Oct 21 14:16 ex2.txt
+
+$ chmod o=rwx _ex3.txt
+$ chmod u=rwx _ex3.txt
+$ ls -l
+total 1
+-rwxr--rwx    1 Grigoriy UsersGrp         0 Oct 21 16:34 _ex3.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       273 Oct 21 15:31 ex1.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       268 Oct 21 16:45 ex2.txt
+
+$ chmod g=u _ex3.txt
+$ ls -l
+total 1
+-rwxrwxrwx    1 Grigoriy UsersGrp         0 Oct 21 16:34 _ex3.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       273 Oct 21 15:31 ex1.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       268 Oct 21 16:45 ex2.txt
+
+$ chmod 660 _ex3.txt
+$ ls -l
+total 3
+-rw-rw----    1 Grigoriy UsersGrp         0 Oct 21 16:34 _ex3.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       273 Oct 21 15:31 ex1.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       268 Oct 21 16:45 ex2.txt
+
+$ chmod 775 _ex3.txt
+$ ls -l
+total 3
+-rwxrwxr-x    1 Grigoriy UsersGrp         0 Oct 21 16:34 _ex3.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       273 Oct 21 15:31 ex1.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       268 Oct 21 16:45 ex2.txt
+
+$ chmod 777 _ex3.txt
+ls -l
+total 3
+-rwxrwxrwx    1 Grigoriy UsersGrp         0 Oct 21 16:34 _ex3.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       273 Oct 21 15:31 ex1.txt
+-rwxr-xr-x    1 Grigoriy UsersGrp       268 Oct 21 16:45 ex2.txt
+
+
+660 = -rw-rw----
+775 = -rwxrwxr-x
+777 = -rwxrwxrwx

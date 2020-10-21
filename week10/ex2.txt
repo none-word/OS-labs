@@ -1,0 +1,13 @@
+$ mkdir week01
+$ cd week01/
+$ nano file.txt
+$ cd ..
+$ link ./week01/file.txt _ex2.txt
+$ ls -i ./week01/file.txt
+6473924464522557 ./week01/file.txt
+
+$ find . -inum 6473924464522557
+./_ex2.txt
+./week01/file.txt
+
+$ find . -inum 6473924464522557 -exec rm {} \;
