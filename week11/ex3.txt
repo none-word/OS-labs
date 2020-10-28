@@ -1,0 +1,1 @@
+"\n" cleans the buffer. So the second program output "Hello" only once. And so 1 program output "Hello" twice.
