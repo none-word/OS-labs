@@ -1,0 +1,34 @@
+gcc -DBUF_SIZE=20 -o copy.out copy.c
+time ./copy.out ex3_1.txt ex3_2.txt
+real    0m 5.45s
+user    0m 0.81s
+sys     0m 4.60s
+
+gcc -DBUF_SIZE=200 -o copy.out copy.c
+time ./copy.out ex3_1.txt ex3_2.txt
+real    0m 0.59s
+user    0m 0.12s
+sys     0m 0.46s
+
+gcc -DBUF_SIZE=500 -o copy.out copy.c
+time ./copy.out ex3_1.txt ex3_2.txt
+real    0m 0.27s
+user    0m 0.04s
+sys     0m 0.21s
+
+gcc -DSYNC -DBUF_SIZE=200 -o copy.out copy.c
+time ./copy.out ex3_1.txt ex3_2.txt         
+real    0m 11.23s
+user    0m 0.28s
+sys     0m 5.51s
+
+gcc -DSYNC -DBUF_SIZE=2000 -o copy.out copy.c
+time ./copy.out ex3_1.txt ex3_2.txt         
+real    0m 1.21s
+user    0m 0.01s
+sys     0m 0.54s
+
+
+
+If size of buffer increase, then speed also increase. 
+If we add O_SYNC, then speed extremely decrease, but if we use O_SYNC and increase size of buffer, speed will increase.
