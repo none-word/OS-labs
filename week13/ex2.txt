@@ -1,0 +1,11 @@
+Recovery:
++ we will use recovery more seldom than other methods, due to the fact that we use it only when deadlock actually occurs.
+- it not always applicable since can not always make a roll back or kill the process.
+
+Prevention:
++ it always works.
+- it downgrades processes capabilities.
+
+Avoidance:
++ on average outperforms other methos superior in many respects.
+- require additional information about processes which is not always unavailable. So, in many cases can't be implemented.
